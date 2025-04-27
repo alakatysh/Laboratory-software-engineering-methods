@@ -1,0 +1,40 @@
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моделювання руху</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+    <div class="container">
+        <svg id="simulation" width="800" height="600"></svg>
+        
+        <div class="settings">
+            <h3>Налаштування</h3>
+            <label for="startX">X0: 
+                <input type="number" id="startX" value="0">
+            </label>
+            <label for="startY">Y0: 
+                <input type="number" id="startY" value="0">
+            </label>
+            <label for="angle">Кут: 
+                <input type="number" id="angle" value="45">
+            </label>
+            <label for="speed">Початкова швидкість: 
+                <input type="number" id="speed" value="10">
+            </label>
+            <label for="gravity">Прискорення: 
+                <input type="number" id="gravity" value="9.8">
+            </label>
+            <label for="lineColor">Колір лінії: 
+                <input type="color" id="lineColor" value="#ff4500">
+            </label>
+            <button id="startButton">Графік</button>
+            <button id="clearButton">Очистити</button>
+        </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="3.js"></script>
+</body>
+</html>
