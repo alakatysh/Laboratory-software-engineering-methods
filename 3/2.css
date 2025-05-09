@@ -1,0 +1,146 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdfcff;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin: 0;
+  }
+  
+  .info-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .info-bar p {
+    background-color: #f3f0fa;
+    border: 1px solid #c6bfe5;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 15px;
+    color: #4e2a84;
+    box-shadow: 1px 1px 4px rgba(78, 42, 132, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .info-bar p:hover {
+    transform: scale(1.03);
+    background-color: #e9e3f9;
+  }
+  
+  #runBtn {
+    background-color: #6a3fb3;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #runBtn:hover {
+    background-color: #582d96;
+  }
+  
+  #result {
+    background-color: #f3f0fb;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    max-width: 600px;
+    width: 100%;
+    min-height: 100px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    display: none;
+  }
+  
+  #result h3 {
+    margin: 0 0 10px;
+    color: #4b2991;
+  }
+  
+  #result p {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  button.animated-button {
+    background-color: #6a3fb3;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button.animated-button:hover {
+    background-color: #582d96;
+    transform: scale(1.1);
+  }
+  
+  button.animated-button:active {
+    background-color: #4a2d77;
+  }
+  
+  #runBtn {
+    display: inline-block;
+    transition: transform 0.2s;
+  }
+  
+  #runBtn:active {
+    transform: scale(0.98);
+  }
+  
+  #table-container {
+    margin: 30px 0;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: 30px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  th {
+    background-color: #764fc7;
+    color: white;
+  }
+  
+  td.dimmed {
+    background-color: #f9f9f9;
+  }
+  
+  td.highlight {
+    background-color: #e0f3ff;
+  }
+  
+  td.selected {
+    background-color: #fbc02d;
+    color: #000;
+    font-weight: bold;
+  }
+  
